@@ -1,5 +1,6 @@
 #include "DuoRogueConfig.h"
 #include "DuoRogueDatabase.h"
+#include "DuoRogueDeathDuel.h"
 #include "DuoRogueRewards.h"
 #include "Chat.h"
 #include "Creature.h"
@@ -39,6 +40,7 @@ void SendMain(Player* player, Creature* creature)
     AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Unlock Class Souls", GOSSIP_SENDER_MAIN, ACTION_SOULS);
     AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Buy Run Perks", GOSSIP_SENDER_MAIN, ACTION_PERKS);
     AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Reset my dead run", GOSSIP_SENDER_MAIN, ACTION_RESET);
+    DuoRogue::DeathDuel::AddGossipOptions(player);
     if (player->IsGameMaster())
         AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Admin/debug options", GOSSIP_SENDER_MAIN, ACTION_ADMIN);
     SendGossipMenuFor(player, DEFAULT_GOSSIP_MESSAGE, creature->GetGUID());
@@ -193,6 +195,12 @@ public:
                 return true;
             default:
                 break;
+        }
+
+        if (DuoRogue::DeathDuel::HandleGossipAction(player, creature, action))
+        {
+            SendMain(player, creature);
+            return true;
         }
 
         if (action >= ACTION_SOUL_BASE && action < ACTION_SOUL_BASE + DuoRogue::GetClassSouls().size())

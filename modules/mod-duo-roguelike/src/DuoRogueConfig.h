@@ -37,6 +37,20 @@ struct Config
     uint32 DuoBuffDamagePercent = 25;
     uint32 DuoBuffHealingPercent = 25;
     uint32 DuoBuffStaminaPercent = 35;
+    bool PeaceModeEnable = true;
+    bool PeaceModeDisableOpenWorldPvP = true;
+    bool PeaceModeRemovePvPFlag = true;
+    bool PeaceModeDisableFFA = true;
+    bool PeaceModeAllowDuels = true;
+    bool PeaceModeAllowDeathDuels = true;
+    bool PeaceModeMakeFactionGuardsNeutral = true;
+    bool PeaceModeMakeCityFactionNPCsNeutral = true;
+    bool DeathDuelEnable = true;
+    bool DeathDuelRequireBothPlayersConfirm = true;
+    bool DeathDuelMarkHardcoreDeath = true;
+    bool DeathDuelAllowInsideDungeons = false;
+    bool DeathDuelAnnounceStart = true;
+    bool DeathDuelAnnounceWinner = true;
     bool Debug = false;
 };
 

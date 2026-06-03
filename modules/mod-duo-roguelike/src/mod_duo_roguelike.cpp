@@ -2,6 +2,8 @@ void AddDuoRogueConfigScripts();
 void AddDuoRoguePlayerScripts();
 void AddDuoRogueNpcScripts();
 void AddDuoRogueRewardScripts();
+void AddDuoRoguePeaceModeScripts();
+void AddDuoRogueDeathDuelScripts();
 
 void Addmod_duo_roguelikeScripts()
 {
@@ -9,4 +11,6 @@ void Addmod_duo_roguelikeScripts()
     AddDuoRoguePlayerScripts();
     AddDuoRogueNpcScripts();
     AddDuoRogueRewardScripts();
+    AddDuoRoguePeaceModeScripts();
+    AddDuoRogueDeathDuelScripts();
 }

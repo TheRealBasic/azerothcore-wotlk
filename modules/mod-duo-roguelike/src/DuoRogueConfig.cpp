@@ -66,6 +66,20 @@ void LoadConfig()
     g_Config.DuoBuffDamagePercent = sConfigMgr->GetOption<uint32>("DuoRogue.DuoBuff.DamagePercent", 25);
     g_Config.DuoBuffHealingPercent = sConfigMgr->GetOption<uint32>("DuoRogue.DuoBuff.HealingPercent", 25);
     g_Config.DuoBuffStaminaPercent = sConfigMgr->GetOption<uint32>("DuoRogue.DuoBuff.StaminaPercent", 35);
+    g_Config.PeaceModeEnable = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.Enable", true);
+    g_Config.PeaceModeDisableOpenWorldPvP = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.DisableOpenWorldPvP", true);
+    g_Config.PeaceModeRemovePvPFlag = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.RemovePvPFlag", true);
+    g_Config.PeaceModeDisableFFA = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.DisableFFA", true);
+    g_Config.PeaceModeAllowDuels = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.AllowDuels", true);
+    g_Config.PeaceModeAllowDeathDuels = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.AllowDeathDuels", true);
+    g_Config.PeaceModeMakeFactionGuardsNeutral = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.MakeFactionGuardsNeutral", true);
+    g_Config.PeaceModeMakeCityFactionNPCsNeutral = sConfigMgr->GetOption<bool>("DuoRogue.PeaceMode.MakeCityFactionNPCsNeutral", true);
+    g_Config.DeathDuelEnable = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.Enable", true);
+    g_Config.DeathDuelRequireBothPlayersConfirm = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.RequireBothPlayersConfirm", true);
+    g_Config.DeathDuelMarkHardcoreDeath = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.MarkHardcoreDeath", true);
+    g_Config.DeathDuelAllowInsideDungeons = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.AllowInsideDungeons", false);
+    g_Config.DeathDuelAnnounceStart = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.AnnounceStart", true);
+    g_Config.DeathDuelAnnounceWinner = sConfigMgr->GetOption<bool>("DuoRogue.DeathDuel.AnnounceWinner", true);
     g_Config.Debug = sConfigMgr->GetOption<bool>("DuoRogue.Debug", false);
 
     LOG_INFO("module.duorogue", "Duo Roguelike module {}", g_Config.Enable ? "enabled" : "disabled");
