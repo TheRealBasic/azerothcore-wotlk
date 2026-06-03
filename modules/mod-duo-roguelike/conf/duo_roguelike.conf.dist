@@ -1,0 +1,49 @@
+# Duo Roguelike module configuration
+
+DuoRogue.Enable = 1
+
+# XP
+DuoRogue.XPMultiplier = 3.0
+
+# Hardcore
+DuoRogue.Hardcore.Enable = 1
+DuoRogue.Hardcore.SafeInDungeons = 1
+DuoRogue.Hardcore.DeleteCharacter = 0
+DuoRogue.Hardcore.LockDeadCharacter = 1
+DuoRogue.Hardcore.TeleportDeadCharacterToGraveyard = 1
+
+# Random origin/race
+DuoRogue.RandomOrigin.Enable = 1
+DuoRogue.RandomOrigin.ForceOnFirstLogin = 1
+DuoRogue.RandomOrigin.AllowFactionMismatch = 0
+
+# No city zones
+DuoRogue.NoCities.Enable = 1
+DuoRogue.NoCities.TeleportOut = 1
+DuoRogue.NoCities.WarningMessage = 1
+DuoRogue.NoCities.ZoneIds = 1519,1537,1657,3557,1637,1638,1497,3487,3703,4395
+
+# Dungeon safe zones
+DuoRogue.DungeonSafeZones.Enable = 1
+
+# Roguelike progression
+DuoRogue.Progression.Enable = 1
+DuoRogue.Progression.CurrencyName = Essence
+DuoRogue.Progression.AwardOnLevelMilestone = 1
+DuoRogue.Progression.AwardOnDungeonBossKill = 1
+DuoRogue.Progression.AwardOnRunDeath = 1
+
+# NPC
+DuoRogue.NpcEntry = 900001
+DuoRogue.NpcName = The Run Keeper
+
+# Duo scaling
+DuoRogue.DuoBuff.Enable = 1
+DuoRogue.DuoBuff.MaxPlayers = 2
+DuoRogue.DuoBuff.OnlyInDungeonsAndRaids = 1
+DuoRogue.DuoBuff.DamagePercent = 25
+DuoRogue.DuoBuff.HealingPercent = 25
+DuoRogue.DuoBuff.StaminaPercent = 35
+
+# Debug
+DuoRogue.Debug = 0
