@@ -45,5 +45,23 @@ DuoRogue.DuoBuff.DamagePercent = 25
 DuoRogue.DuoBuff.HealingPercent = 25
 DuoRogue.DuoBuff.StaminaPercent = 35
 
+# Peace Mode
+DuoRogue.PeaceMode.Enable = 1
+DuoRogue.PeaceMode.DisableOpenWorldPvP = 1
+DuoRogue.PeaceMode.RemovePvPFlag = 1
+DuoRogue.PeaceMode.DisableFFA = 1
+DuoRogue.PeaceMode.AllowDuels = 1
+DuoRogue.PeaceMode.AllowDeathDuels = 1
+DuoRogue.PeaceMode.MakeFactionGuardsNeutral = 1
+DuoRogue.PeaceMode.MakeCityFactionNPCsNeutral = 1
+
+# Death Duel
+DuoRogue.DeathDuel.Enable = 1
+DuoRogue.DeathDuel.RequireBothPlayersConfirm = 1
+DuoRogue.DeathDuel.MarkHardcoreDeath = 1
+DuoRogue.DeathDuel.AllowInsideDungeons = 0
+DuoRogue.DeathDuel.AnnounceStart = 1
+DuoRogue.DeathDuel.AnnounceWinner = 1
+
 # Debug
 DuoRogue.Debug = 0
